@@ -46,3 +46,26 @@ w=:WR :CW=w-1 lAddr=:Addr-:Id0 goto 1+(lAddr%:NrChs==0)*(lAddr+1)*w
 :Ei=:O :Ej=:P :Ek=:Q :El=:R :Em=:S :En=:T :Eo=:U :Ep=:V :Eq=:W goto 1
 ```
 
+
+90 local values read/write, 10 values per line, same as a data chip, use network relays to quickly enable and copy data chips here
+```vbnet
+n=:NrChs add=:Addr-[ChId] t=add%n==0 :CW-=t goto 1+t*(add/n+1)*(2-:WR)
+a0=:O a1=:P a2=:Q a3=:R a4=:S a5=:T a6=:U a7=:V a8=:W a9=:X goto --:CW
+:E=a0 :F=a1 :G=a2 :H=a3 :I=a4 :J=a5 :K=a6 :L=a7 :M=a8 :N=a9 goto --:CW
+aa=:O ab=:P ac=:Q ad=:R ae=:S af=:T ag=:U ah=:V ai=:W aj=:X goto --:CW
+:E=aa :F=ab :G=ac :H=ad :I=ae :J=af :K=ag :L=ah :M=ai :N=aj goto --:CW
+ak=:O al=:P am=:Q an=:R ao=:S ap=:T aq=:U ar=:V as=:W at=:X goto --:CW
+:E=ak :F=al :G=am :H=an :I=ao :J=ap :K=aq :L=ar :M=as :N=at goto --:CW
+b0=:O b1=:P b2=:Q b3=:R b4=:S b5=:T b6=:U b7=:V b8=:W b9=:X goto --:CW
+:E=b0 :F=b1 :G=b2 :H=b3 :I=b4 :J=b5 :K=b6 :L=b7 :M=b8 :N=b9 goto --:CW
+ba=:O bb=:P bc=:Q bd=:R be=:S bf=:T bg=:U bh=:V bi=:W bj=:X goto --:CW
+:E=ba :F=bb :G=bc :H=bd :I=be :J=bf :K=bg :L=bh :M=bi :N=bj goto --:CW
+bk=:O bl=:P bm=:Q bn=:R bo=:S bp=:T bq=:U br=:V bs=:W bt=:X goto --:CW
+:E=bk :F=bl :G=bm :H=bn :I=bo :J=bp :K=bq :L=br :M=bs :N=bt goto --:CW
+c0=:O c1=:P c2=:Q c3=:R c4=:S c5=:T c6=:U c7=:V c8=:W c9=:X goto --:CW
+:E=c0 :F=c1 :G=c2 :H=c3 :I=c4 :J=c5 :K=c6 :L=c7 :M=c8 :N=c9 goto --:CW
+ca=:O cb=:P cc=:Q cd=:R ce=:S cf=:T cg=:U ch=:V ci=:W cj=:X goto --:CW
+:E=ca :F=cb :G=cc :H=cd :I=ce :J=cf :K=cg :L=ch :M=ci :N=cj goto --:CW
+ck=:O cl=:P cm=:Q cn=:R co=:S cp=:T cq=:U cr=:V cs=:W ct=:X goto --:CW
+:E=ck :F=cl :G=cm :H=cn :I=co :J=cp :K=cq :L=cr :M=cs :N=ct goto --:CW
+```
