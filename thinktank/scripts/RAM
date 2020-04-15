@@ -1,0 +1,22 @@
+```vbnet
+--:CW lAddr=:Addr-:Id0 goto 1+:Active*(lAddr%:NrChips==0)*(lAddr+1)
+if :WR then :A0=:I :B0=:J :C0=:K else :O=:A0 :P=:B0 :Q=:C0 end goto 1
+if :WR then :A1=:I :B1=:J :C1=:K else :O=:A1 :P=:B1 :Q=:C1 end goto 1
+if :WR then :A2=:I :B2=:J :C2=:K else :O=:A2 :P=:B2 :Q=:C2 end goto 1
+if :WR then :A3=:I :B3=:J :C3=:K else :O=:A3 :P=:B3 :Q=:C3 end goto 1
+if :WR then :A4=:I :B4=:J :C4=:K else :O=:A4 :P=:B4 :Q=:C4 end goto 1
+if :WR then :A5=:I :B5=:J :C5=:K else :O=:A5 :P=:B5 :Q=:C5 end goto 1
+if :WR then :A6=:I :B6=:J :C6=:K else :O=:A6 :P=:B6 :Q=:C6 end goto 1
+if :WR then :A7=:I :B7=:J :C7=:K else :O=:A7 :P=:B7 :Q=:C7 end goto 1
+if :WR then :A8=:I :B8=:J :C8=:K else :O=:A8 :P=:B8 :Q=:C8 end goto 1
+if :WR then :A9=:I :B9=:J :C9=:K else :O=:A9 :P=:B9 :Q=:C9 end goto 1
+if :WR then :Aa=:I :Ba=:J :Ca=:K else :O=:Aa :P=:Ba :Q=:Ca end goto 1
+if :WR then :Ab=:I :Bb=:J :Cb=:K else :O=:Ab :P=:Bb :Q=:Cb end goto 1
+if :WR then :Ac=:I :Bc=:J :Cc=:K else :O=:Ac :P=:Bc :Q=:Cc end goto 1
+if :WR then :Ad=:I :Bd=:J :Cd=:K else :O=:Ad :P=:Bd :Q=:Cd end goto 1
+if :WR then :Ae=:I :Be=:J :Ce=:K else :O=:Ae :P=:Be :Q=:Ce end goto 1
+if :WR then :Af=:I :Bf=:J :Cf=:K else :O=:Af :P=:Bf :Q=:Cf end goto 1
+if :WR then :Ag=:I :Bg=:J :Cg=:K else :O=:Ag :P=:Bg :Q=:Cg end goto 1
+if :WR then :Ah=:I :Bh=:J :Ch=:K else :O=:Ah :P=:Bh :Q=:Ch end goto 1
+if :WR then :Ai=:I :Bi=:J :Ci=:K else :O=:Ai :P=:Bi :Q=:Ci end goto 1
+```
