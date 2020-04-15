@@ -20,3 +20,29 @@ if :WR then :Ag=:I :Bg=:J :Cg=:K else :O=:Ag :P=:Bg :Q=:Cg end goto 1
 if :WR then :Ah=:I :Bh=:J :Ch=:K else :O=:Ah :P=:Bh :Q=:Ch end goto 1
 if :WR then :Ai=:I :Bi=:J :Ci=:K else :O=:Ai :P=:Bi :Q=:Ci end goto 1
 ```
+
+Addressable per 9 values, CPU can only read from cached data
+
+```vbnet
+w=:WR :CW=w-1 lAddr=:Addr-:Id0 goto 1+(lAddr%:NrChs==0)*(lAddr+1)*w
+:A0=:O :A1=:P :A2=:Q :A3=:R :A4=:S :A5=:T :A6=:U :A7=:V :A8=:W goto 1
+:A9=:O :Aa=:P :Ab=:Q :Ac=:R :Ad=:S :Ae=:T :Af=:U :Ag=:V :Ah=:W goto 1
+:Ai=:O :Aj=:P :Ak=:Q :Al=:R :Am=:S :An=:T :Ao=:U :Ap=:V :Aq=:W goto 1
+:Ar=:O :As=:P :At=:Q :Au=:R :Av=:S :Aw=:T :Ax=:U :Ay=:V :Az=:W goto 1
+:B0=:O :B1=:P :B2=:Q :B3=:R :B4=:S :B5=:T :B6=:U :B7=:V :B8=:W goto 1
+:B9=:O :Ba=:P :Bb=:Q :Bc=:R :Bd=:S :Be=:T :Bf=:U :Bg=:V :Bh=:W goto 1
+:Bi=:O :Bj=:P :Bk=:Q :Bl=:R :Bm=:S :Bn=:T :Bo=:U :Bp=:V :Bq=:W goto 1
+:Br=:O :Bs=:P :Bt=:Q :Bu=:R :Bv=:S :Bw=:T :Bx=:U :By=:V :Bz=:W goto 1
+:C0=:O :C1=:P :C2=:Q :C3=:R :C4=:S :C5=:T :C6=:U :C7=:V :C8=:W goto 1
+:C9=:O :Ca=:P :Cb=:Q :Cc=:R :Cd=:S :Ce=:T :Cf=:U :Cg=:V :Ch=:W goto 1
+:Ci=:O :Cj=:P :Ck=:Q :Cl=:R :Cm=:S :Cn=:T :Co=:U :Cp=:V :Cq=:W goto 1
+:Cr=:O :Cs=:P :Ct=:Q :Cu=:R :Cv=:S :Cw=:T :Cx=:U :Cy=:V :Cz=:W goto 1
+:D0=:O :D1=:P :D2=:Q :D3=:R :D4=:S :D5=:T :D6=:U :D7=:V :D8=:W goto 1
+:D9=:O :Da=:P :Db=:Q :Dc=:R :Dd=:S :De=:T :Df=:U :Dg=:V :Dh=:W goto 1
+:Di=:O :Dj=:P :Dk=:Q :Dl=:R :Dm=:S :Dn=:T :Do=:U :Dp=:V :Dq=:W goto 1
+:Dr=:O :Ds=:P :Dt=:Q :Du=:R :Dv=:S :Dw=:T :Dx=:U :Dy=:V :Dz=:W goto 1
+:E0=:O :E1=:P :E2=:Q :E3=:R :E4=:S :E5=:T :E6=:U :E7=:V :E8=:W goto 1
+:E9=:O :Ea=:P :Eb=:Q :Ec=:R :Ed=:S :Ee=:T :Ef=:U :Eg=:V :Eh=:W goto 1
+:Ei=:O :Ej=:P :Ek=:Q :El=:R :Em=:S :En=:T :Eo=:U :Ep=:V :Eq=:W goto 1
+```
+
