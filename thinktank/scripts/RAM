@@ -49,7 +49,7 @@ w=:WR :CW=w-1 lAddr=:Addr-:Id0 goto 1+(lAddr%:NrChs==0)*(lAddr+1)*w
 
 90 local values read/write, 10 values per line, same as a data chip, use network relays to quickly enable and copy data chips here
 ```vbnet
-n=:NrChs add=:Addr-[ChId] t=add%n==0 :CW-=t goto 1+t*(add/n+1)*(2-:WR)
+z=:Addr%90/10 t=:Addr/90 t=t%1==:Id0 :CW=t-1 goto :RD+t*(z-z%1)*2
 a0=:O a1=:P a2=:Q a3=:R a4=:S a5=:T a6=:U a7=:V a8=:W a9=:X goto --:CW
 :E=a0 :F=a1 :G=a2 :H=a3 :I=a4 :J=a5 :K=a6 :L=a7 :M=a8 :N=a9 goto --:CW
 aa=:O ab=:P ac=:Q ad=:R ae=:S af=:T ag=:U ah=:V ai=:W aj=:X goto --:CW
