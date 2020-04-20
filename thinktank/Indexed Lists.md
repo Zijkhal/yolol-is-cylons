@@ -20,7 +20,7 @@ Stores 27 arbitrary values per chip, has support for combining multiple chips in
  - **s** : select flag for the second variable on the line, 0 means active
  - **:A** : this is where reads go to
  - **:B** : put the value to write in this
- - **:Cid[two digit number]** : Unique identifier of the chip in the multichip array, start from 0, raise by 1 for each consecutive chip. If desired, it can be replaced with hardcoded value to be set during installation.
+ - **:Cid[two digit number]** : Unique identifier of the chip in the multichip array, it's value should start from 0, and raise it by 1 for each consecutive chip. If desired, it can be replaced with hardcoded value to be set during installation.
  - **a0, a1, etc etc** : storage variables
 
 #### Continuos Addressing
