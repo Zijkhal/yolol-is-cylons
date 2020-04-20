@@ -1,5 +1,5 @@
 # Indexed Lists
-*By [Zijkhal] (https://github.com/Zijkhal)*
+*By [Zijkhal](https://github.com/Zijkhal)*
 
 ------------
 Access variables by an address, instead of a name!
